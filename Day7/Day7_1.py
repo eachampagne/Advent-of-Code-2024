@@ -15,10 +15,9 @@ def find_possibilities(terms):
                 match k:
                     case 0:
                         new_result = j + terms[i]
-                        new_possible.append(new_result)
                     case 1:
                         new_result = j * terms[i]
-                        new_possible.append(new_result)
+                new_possible.append(new_result)
         possible = new_possible
     return possible
 
