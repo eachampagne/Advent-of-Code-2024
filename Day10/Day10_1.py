@@ -72,6 +72,7 @@ for i in trailheads:
             height = grid[neighbor[1]][neighbor[0]]
             if height == current_height + 1:
                 to_search.put(neighbor)
+        visited.add(current_tile)
     
     score_sum += len(can_reach)
 
