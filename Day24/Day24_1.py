@@ -66,7 +66,7 @@ for i in f:
         wire_rules[result] = ((input_1, input_2), operation)
 
 solution = 0
-for i in range(1, highest_z+1):
+for i in range(highest_z+1):
     wire_to_calc = "z" + str(i).zfill(2) #have to pad to 2 digits
     solved_wire = solve_wire(wire_to_calc)
     solution += solved_wire * 2**i
